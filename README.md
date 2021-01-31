@@ -1,5 +1,4 @@
-# Luke's Auto-Rice Bootstraping Scripts (LARBS)
-
+# Arch bootstrapping script
 
 ## Installation:
 
