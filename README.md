@@ -1,12 +1,12 @@
 # Arch bootstrapping script
 
 ## Installation:
-1. Complete the first arch installation steps:
-  i. Boot Arch installation medium.
-  ii. Connect to the network
-  iii. Set your keyboard layot, arch repository mirrors.
-  iv. Setup partitions (GPT for UEFI or 2TB+ disk, EFI boot partition, DOS otherwise).
-2. Download this script and run it:
+1. Boot Arch installation medium.
+2. Connect to the network
+3. Set your keyboard layot, arch repository mirrors.
+4. Setup partitions (GPT for UEFI or 2TB+ disk, EFI boot partition, DOS otherwise).
+5. Download this script and run it:
+
 ```
 curl -LO https://raw.githubusercontent.com/pavilkau/arch-bootstrap/master/larbs.sh
 sh larbs.sh
