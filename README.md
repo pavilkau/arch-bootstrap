@@ -1,9 +1,7 @@
-# Arch bootstrapping script
-
-## Installation:
+## Arch Installation:
 1. Boot Arch installation medium.
 2. Connect to the network
-3. Set your keyboard layot, arch repository mirrors.
+3. Set your keyboard layout, arch repository mirrors.
 - pacman -Syyy
 - pacman -S reflector
 - reflector -c Your_country -a 6 --sort rate --save /etc/pacman.d/mirrorlist
