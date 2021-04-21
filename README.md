@@ -4,6 +4,9 @@
 1. Boot Arch installation medium.
 2. Connect to the network
 3. Set your keyboard layot, arch repository mirrors.
+- sudo pacman -S reflector
+- reflector -c Your_country -a 6 --sort rate --save /etc/pacman.d/mirrorlist
+- sudo pacman -Syyy
 4. Setup partitions (GPT for UEFI or 2TB+ disk, EFI boot partition, DOS otherwise).
 5. Download this script and run it:
 
