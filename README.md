@@ -4,13 +4,20 @@
 1. Boot Arch installation medium.
 2. Connect to the network
 3. Set your keyboard layot, arch repository mirrors.
+- pacman -Syyy
 - pacman -S reflector
 - reflector -c Your_country -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 - pacman -Syyy
-4. Setup partitions (GPT for UEFI or 2TB+ disk, EFI boot partition; DOS otherwise).
-5. Mount partitions:
-- 
-7. Download this script and run it:
+5. Setup partitions (GPT for UEFI or 2TB+ disk, EFI boot partition; DOS otherwise).
+6. Format partitions:
+- For UEFI, EFI partition should be formatted as FAT: mkfs.fat -F32 /dev/nvme0n1p1
+- Regular partitions are formatted as EXT4: mkfs.ext4 /dev/nvmen1p2
+7. Mount partitions:
+- mkdir /mnt/boot
+- mount /dev/nvme0n1p1 /mnt/boot
+- mount /dev/nvme0n1p2 /mnt
+8. pacstrap /mnt base linux linux-firmware
+9. Download this script and run it:
 
 ```
 curl -LO https://raw.githubusercontent.com/pavilkau/arch-bootstrap/master/larbs.sh
