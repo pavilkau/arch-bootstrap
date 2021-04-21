@@ -1,12 +1,6 @@
 # Arch bootstrapping script
 
 ## Installation:
-
-On an Arch based distribution as root, run the following:
-
-
-
-Steps:
 1. Complete the first arch installation steps:
   i. Boot Arch installation medium.
   ii. Connect to the network
