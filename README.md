@@ -49,3 +49,8 @@ phrase) that describes the program. During installation, LARBS will print out
 this information in a grammatical sentence. It also doubles as documentation
 for people who read the csv or who want to install my dotfiles manually.
 
+TODO:
+- convert the csv list to json
+- automate everything after arch-chroot
+- setup the graphical env
+- setup fonts
